@@ -1,0 +1,21 @@
+{
+  "name": "hashlife-js",
+  "version": "1.0.0",
+  "description": "Gosper's Hashlife for Life-like cellular automata in zero dependency JavaScript: hash-consed quadtrees, memoised 2^k generation jumps, RLE I/O, CLI and canvas viewer.",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": "./src/index.js",
+  "bin": {
+    "hashlife": "bin/hashlife.js"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "bench": "node bench/bench.js",
+    "demo": "node bin/hashlife.js serve"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": ["hashlife", "game-of-life", "cellular-automata", "quadtree", "memoization", "rle"],
+  "license": "MIT"
+}
